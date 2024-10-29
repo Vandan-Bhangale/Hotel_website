@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
@@ -56,10 +56,10 @@ main {
     display: flex;
 }
 .homeimg {
-    width: 95vw; /* Adjust width to fit the remaining space */
+    width: 95vw;
     height: 100vh; 
-    object-fit: cover; /* Ensure the image covers the container properly */
-    position: relative;
+    object-fit: cover;
+    /* position: relative; */
 }
 .home_img {
     width: 95vw;
@@ -113,7 +113,7 @@ main {
 .welcome {
     color: white;
     font-size: 50px;
-    text-align: center;
+    margin-left: 5vw;
 }
 .btn {
     background-color: orange;
@@ -121,6 +121,7 @@ main {
     border-radius: 20px;
     height: 30px;
     width: 90px;
+    margin-left: 5vw;
     font-size: 15px;
     color: white;
     padding: 5px;
@@ -519,17 +520,16 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
 }
 .gallery_images {
-    width: 80px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    width: 100px;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 .gallery_container {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 25vw;
 }
 .copyright {
     width: 95vw;
@@ -542,4 +542,549 @@ input::placeholder {
 }
 .copyright_line {
     color: white;
+}
+
+/* Responsiveness Starts here */
+
+@media screen and (max-width:412px){
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        width: 10vw;
+        height: 80vh;
+        /* background-color: rgb(246, 221, 236); */
+        background-color: #e5e5e5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: fixed; /* Fix the navigation bar in place */
+        top: 0; /* Align to the top of the viewport */
+        left: 0; /* Align to the left of the viewport */
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+    .menu {
+        font-size: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        font-size: small;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    /* Respnosiveness of home page starts */
+
+    main {
+        height: 73vh;
+        display: flex;
+    }
+    .homeimg {
+        width: 90vw;
+        height:  73vh; 
+        object-fit: cover;
+        position: relative; 
+    }
+    .home_img {
+        width: 100%;
+        height: 73vh;
+        margin-left: 10vw;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        height: 73vh;
+        width: 90vw;
+        background-color: rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+        margin-left: 10vw;
+    }
+    .logo_container {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        margin-left: 50px;
+    }
+    .logo {
+        height: 50px;
+    }
+    .hotel_name {
+        font-size: 15px;
+        color: white;
+        margin-top: 18px;
+        animation-name: name;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        transition: name ease-in-out;
+        margin-left: 7px;
+    }
+    .content_container {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ensure full-width for centering */
+        height: 70vh;
+        z-index: 9;
+        flex-direction: column;
+    }
+    .welcome {
+        color: white;
+        font-size: 25px;
+        margin-left: 10vw;
+    }
+    .btn {
+        background-color: orange;
+        border: none;
+        border-radius: 20px;
+        height: 25px;
+        width: 80px;
+        margin-left: 10vw;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        padding: 5px;
+        margin-top: 10px;
+        animation-name: checked;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    /* Responsiveness of about section starts */
+    .about {
+        height: 80vh;
+        width: 90vw;
+        background-color: gainsboro;
+        margin-left: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about_us {
+        height: 40vh;
+        width: 90vw;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* flex-direction: column; */
+    }
+    .about_heading {
+        margin-left: 0vw;
+        margin-top: 70px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+    .hr1 {
+        width: 75px; 
+        min-height: 2px;
+        margin-left: 0vw;
+        margin-bottom: 10px;
+        background-color: orange;
+        border: none;
+        padding: 0;
+        display: block;
+    }
+    .hr2 {
+        width: 125px;
+        min-height: 2px;
+        margin-left: 0vw;
+        background-color: orange;
+        border: none;
+        padding: 0;
+    }
+    .about_name {
+        text-align: center;
+        margin-left: 0vw;
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 400;
+        color: orange ;
+    }
+    .para {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        width: 50%;
+        text-align: center;
+        height: 20vh;
+        width: 70vw;
+    }
+    .about_btn {
+        margin-top: 20px;
+        margin-left: 0vw;
+        padding: 5px;
+        border: none;
+        background-color: orange;
+        color: white;
+        height: 30px;
+        width: 120px;
+        cursor: pointer;
+    }
+    .about_btn:hover {
+        transform: scale(1.2);
+        transition: 300ms ease-in-out;
+    }
+    .image_container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40vh;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    .about_img {
+        width: 40%;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .img1 {
+        top: 0px;
+        left: 170px;
+    }
+    .img2 {
+        top: 0px;
+        left: -15px;
+    }
+    .img3 {
+        bottom:12px;
+        left: -13px;
+    }
+    .img4 {
+        top: 185px;
+        right: 30px;
+    }
+
+    /* Responsiveness of rooms section */
+
+    .rooms {
+        margin-left: 10vw;
+        height: 25vh;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .room_heading {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 300;
+        color: rgb(251, 10, 10);
+    }
+    .room_container {
+        height: auto;
+        width: 90vw;
+        margin-left: 10vw;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .room_card {
+        height: 40vh;
+        width: 60vw;
+        background-color: black;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 25px;
+        border-radius: 0 15px 15px;
+        box-shadow: 5px 10px 20px rgba(0, 0, 0,0.7);
+        position: relative;
+    }
+    .single_room {
+        width: 100%;
+        height: 55%;
+    }
+    .room_name {
+        color: white;
+        font-weight: 400;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .paras {
+        color: white;
+        font-size: small;
+        margin-left: 15px;
+        margin-top: 10px;
+        width: 90%;
+    }
+    .price {
+        color: white;
+        font-size: 30px;
+        margin-left: 60%;
+        margin-top: 20px;
+        position: absolute;
+    }
+    .book {
+        height: 25px;
+        width: 120px;
+        margin-left: 15px;
+        border: 1px white solid;
+        background-color: gray;
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        margin-top: 25px;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .book span {
+        display: inline-block;
+         animation-name: scale;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transition: all ease-in-out;
+    }
+    .price_double{
+        color: white;
+        font-size: 25px;
+        margin-left: 60%;
+        margin-top: 25px;
+        position: absolute;
+    }
+
+    /* Customer review responsiveness  */
+
+    .review {
+        height : auto;
+        width: 90vw;
+        margin-left: 10vw;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cutomer {
+        color: white;
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .review_hr1 {
+        width: 90px; 
+        height: 2px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        background-color: orange;
+        border: none;
+        padding: 0;
+    }
+    .review_hr2 {
+        width: 160px;
+        height: 2px;
+        background-color: orange;
+        border: none;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .review_para {
+        width: 70%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .customer_card_container {
+        width: 90%;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cutomer1 {
+        width: 90%;
+        height: 120px;
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .cutomer1_img {
+        width: 30%;
+        position: absolute;
+        left: -20px;
+    }
+    .customer_details {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .cutoemr_name {
+        font-weight: 500;
+        margin-left: 25%;
+        margin-bottom: 10px;
+    }
+    .cutomer_review {
+        font-weight: 500;
+        font-size: 10px;
+        color: red;
+        font-style: italic;
+        margin-left: 25%;
+        margin-bottom: 15px;
+    }
+    .cutomer_para {
+        width: 90%;
+        font-size: 12px;
+        margin-left: 25%;
+    }
+
+    /* Responsiveness of Footer section */
+
+    .footer {
+        height: 100vh;
+        width: 90vw;
+        margin-left: 10vw;
+        background-color: #2a9d8f;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .footer_heading {
+        font-weight: 400;
+        color: rgb(255, 166, 0);
+        text-align: center;
+    }
+    .info {
+        margin-top: 20px;
+    }
+    .self_info {
+        margin-bottom: 10px;
+        color: white;
+    }
+    .introduction{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .explore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 45vw;
+        height: 230px;
+        flex-wrap: wrap;
+    }
+    .explore_heading {
+        font-weight: 400;
+        color: orange;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        /* margin-left: 20px; */
+    }
+    .links_container {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .links {
+        margin-bottom: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    .contact_heading {
+        font-weight: 400;
+        color: orange;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        width: 45vw;
+        height: 230px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .line {
+        margin-bottom: 10px;
+        color: white;
+    }
+    .email_container {
+        display: flex;
+    }
+    .mail {
+        height: 30px;
+        background-color: gray;
+        width: 70%;
+    }
+    input::placeholder {
+        color: white;
+    }
+    .signup_btn  {
+        width: 25%;
+        font-size: 10px;
+        color: red;
+        cursor: pointer;
+    }
+    .gallery_container {
+        width: 90vw;
+        height: 100px;
+    }
+    .gallery_heading {
+        margin-top: 40px;
+        font-weight: 400;
+        color: orange;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .img_container {
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        /* margin-left: 20px; */
+    }
+    .gallery_images {
+        width: 100px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+    .copyright {
+        width: 90vw;
+        margin-left: 10vw;
+        height: 10vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright_line {
+        color: white;
+        font-size: medium;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
