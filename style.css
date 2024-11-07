@@ -546,7 +546,7 @@ input::placeholder {
 
 /* Responsiveness Starts here */
 
-@media screen and (max-width:412px){
+@media screen and (max-width:412px){ 
 
     body {
         display: flex;
@@ -554,7 +554,7 @@ input::placeholder {
     }
     nav {
         width: 10vw;
-        height: 80vh;
+        height: 100vh;
         /* background-color: rgb(246, 221, 236); */
         background-color: #e5e5e5;
         display: flex;
@@ -587,24 +587,24 @@ input::placeholder {
     /* Respnosiveness of home page starts */
 
     main {
-        height: 73vh;
+        height: 100vh;
         display: flex;
     }
     .homeimg {
         width: 90vw;
-        height:  73vh; 
+        height:  100vh; 
         object-fit: cover;
         position: relative; 
     }
     .home_img {
         width: 100%;
-        height: 73vh;
+        height: 100vh;
         margin-left: 10vw;
     }
     .overlay {
         position: absolute;
         top: 0;
-        height: 73vh;
+        height: 100vh;
         width: 90vw;
         background-color: rgba(0, 0, 0, 0.4);
         pointer-events: none;
@@ -635,7 +635,7 @@ input::placeholder {
         justify-content: center;
         align-items: center;
         width: 100%; /* Ensure full-width for centering */
-        height: 70vh;
+        height: 100vh;
         z-index: 9;
         flex-direction: column;
     }
@@ -663,7 +663,7 @@ input::placeholder {
 
     /* Responsiveness of about section starts */
     .about {
-        height: 80vh;
+        height: 100vh;
         width: 90vw;
         background-color: gainsboro;
         margin-left: 10vw;
@@ -681,7 +681,7 @@ input::placeholder {
     }
     .about_heading {
         margin-left: 0vw;
-        margin-top: 70px;
+        margin-top: 50px;
         margin-bottom: 10px;
         font-weight: 400;
     }
@@ -745,7 +745,7 @@ input::placeholder {
         justify-content: space-evenly;
         align-items: center;
         height: 40vh;
-        margin-top: 50px;
+        margin-top: 100px;
         margin-left: 30px;
     }
     .about_img {
@@ -766,15 +766,15 @@ input::placeholder {
         left: -13px;
     }
     .img4 {
-        top: 185px;
-        right: 30px;
+        top: 125px;
+        right: 33px;
     }
 
     /* Responsiveness of rooms section */
 
     .rooms {
         margin-left: 10vw;
-        height: 25vh;
+        height: 30vh;
         width: 90vw;
         display: flex;
         justify-content: center;
@@ -797,8 +797,8 @@ input::placeholder {
         align-items: center;
     }
     .room_card {
-        height: 40vh;
-        width: 60vw;
+        height: 60vh;
+        width: 65vw;
         background-color: black;
         margin-left: 10vw;
         margin-right: 10vw;
@@ -827,8 +827,8 @@ input::placeholder {
     .price {
         color: white;
         font-size: 30px;
-        margin-left: 60%;
-        margin-top: 20px;
+        margin-left: 63%;
+        margin-top: 25px;
         position: absolute;
     }
     .book {
@@ -840,7 +840,7 @@ input::placeholder {
         color: white;
         padding: 8px;
         border-radius: 5px;
-        margin-top: 25px;
+        margin-top: 33px;
         cursor: pointer;
         text-align: center;
         display: flex;
@@ -857,8 +857,8 @@ input::placeholder {
     .price_double{
         color: white;
         font-size: 25px;
-        margin-left: 60%;
-        margin-top: 25px;
+        margin-left: 65%;
+        margin-top: 30px;
         position: absolute;
     }
 
@@ -1051,7 +1051,7 @@ input::placeholder {
         height: 100px;
     }
     .gallery_heading {
-        margin-top: 40px;
+        margin-top: -35px;
         font-weight: 400;
         color: orange;
         margin-bottom: 10px;
