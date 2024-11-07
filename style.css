@@ -663,7 +663,7 @@ input::placeholder {
 
     /* Responsiveness of about section starts */
     .about {
-        height: 100vh;
+        height: 85vh;
         width: 90vw;
         background-color: gainsboro;
         margin-left: 10vw;
@@ -762,7 +762,7 @@ input::placeholder {
         left: -15px;
     }
     .img3 {
-        bottom:12px;
+        bottom:38px;
         left: -13px;
     }
     .img4 {
@@ -797,7 +797,7 @@ input::placeholder {
         align-items: center;
     }
     .room_card {
-        height: 60vh;
+        height: 50vh;
         width: 65vw;
         background-color: black;
         margin-left: 10vw;
@@ -828,7 +828,7 @@ input::placeholder {
         color: white;
         font-size: 30px;
         margin-left: 63%;
-        margin-top: 25px;
+        margin-top: 45px;
         position: absolute;
     }
     .book {
@@ -840,7 +840,7 @@ input::placeholder {
         color: white;
         padding: 8px;
         border-radius: 5px;
-        margin-top: 33px;
+        margin-top: 50px;
         cursor: pointer;
         text-align: center;
         display: flex;
@@ -858,7 +858,7 @@ input::placeholder {
         color: white;
         font-size: 25px;
         margin-left: 65%;
-        margin-top: 30px;
+        margin-top: 45px;
         position: absolute;
     }
 
@@ -956,7 +956,7 @@ input::placeholder {
     /* Responsiveness of Footer section */
 
     .footer {
-        height: 100vh;
+        height: 90vh;
         width: 90vw;
         margin-left: 10vw;
         background-color: #2a9d8f;
